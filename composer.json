@@ -1,22 +1,23 @@
 {
-    "name": "i2br/helpers",
-    "description": "Biblioteca de helpers que ajudam a trabalhar com as aplicacoes da I2BR",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "I2br\\Helpers\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Elias Lazcano Castro Neto",
-            "email": "elias304162@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": ">=5.4",
-        "eliaslazcano/helpers": "^1.1"
+  "name": "i2br/helpers",
+  "description": "Biblioteca de helpers que ajudam a trabalhar com as aplicacoes da I2BR",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "I2br\\Helpers\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Elias Lazcano Castro Neto",
+      "email": "elias304162@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4",
+    "eliaslazcano/helpers": "^1.1"
+  }
 }
