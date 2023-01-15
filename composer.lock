@@ -1,0 +1,122 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "68364ce5a5bb33b5ad94fb82d05bbd62",
+    "packages": [
+        {
+            "name": "eliaslazcano/helpers",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eliaslazcano/PhpHelpers.git",
+                "reference": "a83d33c29003c9c365e371ec0286dc35af6073a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eliaslazcano/PhpHelpers/zipball/a83d33c29003c9c365e371ec0286dc35af6073a7",
+                "reference": "a83d33c29003c9c365e371ec0286dc35af6073a7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "gumlet/php-image-resize": "^2.0",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eliaslazcano\\Helpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elias Lazcano Castro Neto",
+                    "email": "elias304162@gmail.com"
+                }
+            ],
+            "description": "Biblioteca de helpers para simplificar comandos rotineiros do PHP",
+            "support": {
+                "issues": "https://github.com/eliaslazcano/PhpHelpers/issues",
+                "source": "https://github.com/eliaslazcano/PhpHelpers/tree/v1.1.0"
+            },
+            "time": "2023-01-15T18:25:17+00:00"
+        },
+        {
+            "name": "gumlet/php-image-resize",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gumlet/php-image-resize.git",
+                "reference": "aee4e2573e83476ffd0ac64b7269f838c8cd9d68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gumlet/php-image-resize/zipball/aee4e2573e83476ffd0ac64b7269f838c8cd9d68",
+                "reference": "aee4e2573e83476ffd0ac64b7269f838c8cd9d68",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.1",
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^8.5"
+            },
+            "suggest": {
+                "ext-exif": "Auto-rotate jpeg files"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gumlet\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aditya Patadia",
+                    "homepage": "http://aditya.patadia.org/"
+                }
+            ],
+            "description": "PHP class to re-size and scale images",
+            "homepage": "https://github.com/gumlet/php-image-resize",
+            "keywords": [
+                "image",
+                "php",
+                "resize",
+                "scale"
+            ],
+            "support": {
+                "issues": "https://github.com/gumlet/php-image-resize/issues",
+                "source": "https://github.com/gumlet/php-image-resize/tree/2.0.3"
+            },
+            "time": "2022-06-21T16:20:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
