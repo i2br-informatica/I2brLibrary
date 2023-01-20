@@ -55,6 +55,36 @@ class CnetHelper
   }
 
   /**
+   * Converte o numero que representa a formacao do corretor (conhecida na ficha como 'idEscolaHabilitacao') para sua representacao em texto.
+   * @param int $idHabilitacao Valor de 'idEscolaHabilitacao' na ficha cadastral.
+   * @return string
+   */
+  static function toString_Formacao($idHabilitacao) {
+    switch ($idHabilitacao) {
+      case 1:
+        return 'CIÊNCIAS IMOBILIÁRIAS';
+      case 2:
+        return 'CORRETOR DE IMÓVEIS';
+      case 3:
+        return 'GESTÃO DE NEGÓCIOS IMOBILIÁRIOS';
+      case 4:
+        return 'SUPERIOR DE FORMAÇÃO ESP CIÊNCIAS IMOBILIÁRIAS';
+      case 5:
+        return 'TÉCNICO EM TRANSAÇÕES IMOBILIÁRIAS';
+      case 6:
+        return 'TECNÓLOGO EM TRANSAÇÕES IMOBILIÁRIAS';
+      case 7:
+        return 'SUPERIOR DE FORMAÇÃO ESP GESTÃO IMOBILIÁRIA';
+      case 8:
+        return 'GESTÃO IMOBILIÁRIA';
+      case 9:
+        return 'SUPERIOR DE TECNOLOGIA EM NEGÓCIOS IMOBILIÁRIOS';
+      default:
+        return '';
+    }
+  }
+
+  /**
    * Obtem a imagem da foto de um cadastro.
    * @param int $regional Numero da regiao do conselho.
    * @param string $cpf CPF do cadastro da foto.
