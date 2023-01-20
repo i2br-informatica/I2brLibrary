@@ -117,6 +117,22 @@ class CnetHelper
   }
 
   /**
+   * Obtem a imagem da digital (biometria) de um cadastro.
+   * @param int $regional Numero da regiao do conselho.
+   * @param string $cpf CPF do cadastro da assinatura.
+   * @return array<string,mixed>|null Array no formato ['type' => string, 'size' => int, 'content' => string]. null se nao houver.
+   */
+  static function getCadastroGeral_digitalBiometria($regional, $cpf)
+  {
+    $uf = CreciHelper::idParaUf($regional);
+    $cpf = StringHelper::extractNumbers($cpf);
+    $endpoint = "https://www.creci$uf.conselho.net.br/images/cadastro/digitais/api.php?cpf=$cpf";
+    $response = HttpHelper::curlGet($endpoint);
+    if (!$response || $response['code'] !== 200) return null;
+    return array('type' => $response['type'], 'size' => $response['size'], 'content' => $response['body']);
+  }
+
+  /**
    * Obtem a assinatura do usuario em string binária.
    * @param int $regional Numero do regional.
    * @param int $id ID do usuario do Conselho.NET.
