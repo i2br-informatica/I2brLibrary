@@ -34,7 +34,8 @@ class CreciHelper
     24 => ['uf' => 'RO', 'extenso' => 'Rondônia'],
     25 => ['uf' => 'TO', 'extenso' => 'Tocantins'],
     26 => ['uf' => 'AC', 'extenso' => 'Acre'],
-    27 => ['uf' => 'RR', 'extenso' => 'Roraima']
+    27 => ['uf' => 'RR', 'extenso' => 'Roraima'],
+    28 => ['uf' => 'AP', 'extenso' => 'Amapá']
   ];
 
   /**
