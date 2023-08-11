@@ -19,7 +19,7 @@ class CreciHelper
     8 => ['uf' => 'DF', 'extenso' => 'Distrito Federal'],
     9 => ['uf' => 'BA', 'extenso' => 'Bahia'],
     11 => ['uf' => 'SC', 'extenso' => 'Santa Catarina'],
-    12 => ['uf' => 'PA', 'extenso' => 'Pará & Amapá'],
+    12 => ['uf' => 'PA', 'extenso' => 'Pará'],
     13 => ['uf' => 'ES', 'extenso' => 'Espírito Santo'],
     14 => ['uf' => 'MS', 'extenso' => 'Mato Grosso do Sul'],
     15 => ['uf' => 'CE', 'extenso' => 'Ceará'],
