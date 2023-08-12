@@ -3,10 +3,12 @@
   "description": "Biblioteca de helpers que ajudam a trabalhar com as aplicacoes da I2BR",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "autoload": {
     "psr-4": {
-      "I2br\\Helpers\\": "src/"
+      "I2br\\Cnet\\": "src/Cnet",
+      "I2br\\Database\\": "src/Database",
+      "I2br\\Helpers\\": "src/Helpers"
     }
   },
   "authors": [
@@ -17,7 +19,8 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4",
-    "eliaslazcano/helpers": "^1.1"
+    "php": ">=7.1",
+    "eliaslazcano/helpers": "^1.2",
+    "ext-pdo": "*"
   }
 }
