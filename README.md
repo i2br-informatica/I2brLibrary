@@ -1,5 +1,5 @@
 # I2BR Helpers
-Biblioteca de helpers em PHP que ajudam a trabalhar com os sistemas da I2BR.
+Biblioteca da I2BR para PHP. Disponível no Composer. Possui algoritmos para atividades repetitivas, e possibilita interagir com as integrações com terceiros como a Cielo API para pagamentos com cartão de crédito.
 
 ## Instalação
 ```
