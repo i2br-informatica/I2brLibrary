@@ -6,6 +6,7 @@
   "version": "1.1.0",
   "autoload": {
     "psr-4": {
+      "I2br\\Cielo\\": "src/Cielo",
       "I2br\\Cnet\\": "src/Cnet",
       "I2br\\Database\\": "src/Database",
       "I2br\\Helpers\\": "src/Helpers"
@@ -21,6 +22,8 @@
   "require": {
     "php": ">=7.1",
     "eliaslazcano/helpers": "^1.2",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "ext-json": "*"
   }
 }
