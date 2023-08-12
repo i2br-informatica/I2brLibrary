@@ -4,10 +4,10 @@
  * Códigos que utilizam conexão com o banco de dados ficam no objeto, do contrário ficam na classe (static).
  */
 
-namespace I2br\Cnet;
+namespace I2br\Cnet\Financeiro;
 
-use PDO;
 use I2br\Database\DbController;
+use PDO;
 
 class FinanceiroUtilidades
 {
