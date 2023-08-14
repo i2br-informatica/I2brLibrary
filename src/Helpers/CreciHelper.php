@@ -3,7 +3,7 @@
  * @author Elias Lazcano Castro Neto
  */
 
-namespace I2br\Helpers\Helpers;
+namespace I2br\Helpers;
 
 class CreciHelper
 {
