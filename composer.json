@@ -3,7 +3,7 @@
   "description": "Biblioteca de helpers que ajudam a trabalhar com as aplicacoes da I2BR",
   "type": "library",
   "license": "MIT",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "autoload": {
     "psr-4": {
       "I2br\\Api\\": "src/Api",
