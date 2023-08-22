@@ -7,6 +7,7 @@
   "autoload": {
     "psr-4": {
       "I2br\\Api\\": "src/Api",
+      "I2br\\Cielo\\": "src/Cielo",
       "I2br\\Cnet\\": "src/Cnet",
       "I2br\\Helpers\\": "src/Helpers"
     }
