@@ -41,7 +41,7 @@ class ClienteApiV3 extends ClienteHttp
         $i->itens[$index]->corrigido = $itemCorrigido ? $itemCorrigido->valor : $i->itens[$index]->valor;
         $totalCorrigido += $i->itens[$index]->corrigido;
       }
-      $i->corrigido = $totalCorrigido;
+      $i->corrigido = (float)number_format($totalCorrigido, 2, '.', '');
       return $i;
     }, $dados->cobrancas);
     $resposta->response = json_encode($dados);
