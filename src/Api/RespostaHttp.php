@@ -21,7 +21,7 @@ class RespostaHttp
    * @param string|null $type O mime type da resposta.
    * @param string|null $response O corpo da resposta.
    */
-  public function __construct(string $url, ?string $error, ?int $code, ?string $type, ?string $response)
+  public function __construct(string $url, ?string $error = null, ?int $code = null, ?string $type = null, ?string $response = null)
   {
     $this->url = $url;
     $this->error = $error;
