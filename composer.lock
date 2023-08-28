@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20077f1039a6f972b2cd66505dc00092",
+    "content-hash": "3fc01fd472f9521862e7c678387550c7",
     "packages": [
         {
             "name": "eliaslazcano/helpers",
-            "version": "1.2.4",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eliaslazcano/PhpHelpers.git",
-                "reference": "2c1ce8f551cfeea6ef3bf06398eafbab0e77f38d"
+                "reference": "cdfde5c6aa53bef43ae8370140cbe82cd9c586f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eliaslazcano/PhpHelpers/zipball/2c1ce8f551cfeea6ef3bf06398eafbab0e77f38d",
-                "reference": "2c1ce8f551cfeea6ef3bf06398eafbab0e77f38d",
+                "url": "https://api.github.com/repos/eliaslazcano/PhpHelpers/zipball/cdfde5c6aa53bef43ae8370140cbe82cd9c586f7",
+                "reference": "cdfde5c6aa53bef43ae8370140cbe82cd9c586f7",
                 "shasum": ""
             },
             "require": {
@@ -48,9 +48,9 @@
             "description": "Biblioteca de helpers para simplificar comandos rotineiros do PHP",
             "support": {
                 "issues": "https://github.com/eliaslazcano/PhpHelpers/issues",
-                "source": "https://github.com/eliaslazcano/PhpHelpers/tree/v1.2.4"
+                "source": "https://github.com/eliaslazcano/PhpHelpers/tree/v1.2.6"
             },
-            "time": "2023-08-14T09:00:30+00:00"
+            "time": "2023-08-27T19:38:26+00:00"
         },
         {
             "name": "gumlet/php-image-resize",
