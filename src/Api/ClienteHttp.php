@@ -28,7 +28,13 @@ abstract class ClienteHttp
       CURLOPT_URL => $url,
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_CUSTOMREQUEST => $method,
-      CURLOPT_HTTPHEADER => $headers
+      CURLOPT_HTTPHEADER => $headers,
+      CURLOPT_FOLLOWLOCATION => true,
+      CURLOPT_MAXREDIRS => 10,
+      CURLOPT_TIMEOUT => 32,
+      CURLOPT_CONNECTTIMEOUT => 8,
+      CURLOPT_SSL_VERIFYHOST => 0,
+      CURLOPT_SSL_VERIFYPEER => 0,
     ]);
 
     if (in_array($method, ['POST','PUT','PATCH'])) {
