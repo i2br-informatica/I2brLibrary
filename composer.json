@@ -3,13 +3,10 @@
   "description": "Biblioteca de helpers que ajudam a trabalhar com as aplicacoes da I2BR",
   "type": "library",
   "license": "MIT",
-  "version": "1.2.8",
+  "version": "1.3.0",
   "autoload": {
     "psr-4": {
-      "I2br\\Api\\": "src/Api",
-      "I2br\\Cielo\\": "src/Cielo",
-      "I2br\\Cnet\\": "src/Cnet",
-      "I2br\\Helpers\\": "src/Helpers"
+      "I2br\\": "src/"
     }
   },
   "authors": [

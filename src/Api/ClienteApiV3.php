@@ -22,39 +22,6 @@ class ClienteApiV3 extends ClienteHttp
   }
 
   /**
-   * Realiza o pagamento de cobranças do Cnet usando cartão de crédito através da plataforma CIELO.
-   * @param int $regional Número da região
-   * @param string $cartaoNumero Número do cartão de crédito.
-   * @param string $cartaoNome Nome impresso no cartão de crédito.
-   * @param string $cartaoValidade Validade do cartão em formato MM/YY ou MM/YYYY.
-   * @param string $cartaoCvv Código de verificação do cartão de crédito.
-   * @param array $idCobrancas Array de números inteiros que representam o ID da tabela financeiro de todas as cobranças pagas pela transação.
-   * @param float $valor Valor total da transação.
-   * @param int $parcelas Quantidade de parcelas a ser cobrada no cartão de crédito.
-   * @param string|null $descricao Nome para constar na fatura do cartão de crédito, sem acentos, somente caixa alta.
-   * @param bool $resolucao O valor da transação será validado se confere com a soma do valor corrigido das cobranças citadas, a correção deve usar resolução?
-   * @return RespostaHttp
-   */
-  public function ccPagarCobrancas(int $regional, string $cartaoNumero, string $cartaoNome, string $cartaoValidade, string $cartaoCvv, array $idCobrancas, float $valor, int $parcelas = 1, string $descricao = null, bool $resolucao = true): RespostaHttp
-  {
-    $json = [
-      'regional' => $regional,
-      'descricao' => $descricao ?: 'CRECI',
-      'cobrancas' => $idCobrancas,
-      'parcelas' => $parcelas,
-      'cartao' => [
-        'numero' => $cartaoNumero,
-        'nome' => $cartaoNome,
-        'validade' => $cartaoValidade,
-        'cvv' => $cartaoCvv
-      ],
-      'valor' => $valor,
-      'resolucao' => $resolucao
-    ];
-    return $this->send('POST', '/financeiro/cartao/pagar', json_encode($json));
-  }
-
-  /**
    * Estorna a transação do cartão de crédito. Se for bem sucedida o Cnet retornará a cobrança original com o estado de pagamento pendente.
    * @param int $regional Número do regional.
    * @param string $nsu NSU da transação.
