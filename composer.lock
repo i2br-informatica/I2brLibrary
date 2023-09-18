@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1679da21d623405472f7ea855c1f83b5",
+    "content-hash": "12744871240ba66775270253d6b2cf65",
     "packages": [
         {
             "name": "eliaslazcano/helpers",
-            "version": "1.2.6",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eliaslazcano/PhpHelpers.git",
-                "reference": "cdfde5c6aa53bef43ae8370140cbe82cd9c586f7"
+                "reference": "18574553086bf85000c15bb30c4659440963899b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eliaslazcano/PhpHelpers/zipball/cdfde5c6aa53bef43ae8370140cbe82cd9c586f7",
-                "reference": "cdfde5c6aa53bef43ae8370140cbe82cd9c586f7",
+                "url": "https://api.github.com/repos/eliaslazcano/PhpHelpers/zipball/18574553086bf85000c15bb30c4659440963899b",
+                "reference": "18574553086bf85000c15bb30c4659440963899b",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "ext-mbstring": "*",
                 "ext-pdo": "*",
                 "gumlet/php-image-resize": "^2.0",
-                "php": ">=7.0"
+                "php": ">=7.1"
             },
             "type": "library",
             "autoload": {
@@ -48,9 +48,9 @@
             "description": "Biblioteca de helpers para simplificar comandos rotineiros do PHP",
             "support": {
                 "issues": "https://github.com/eliaslazcano/PhpHelpers/issues",
-                "source": "https://github.com/eliaslazcano/PhpHelpers/tree/v1.2.6"
+                "source": "https://github.com/eliaslazcano/PhpHelpers/tree/v1.2.7"
             },
-            "time": "2023-08-27T19:38:26+00:00"
+            "time": "2023-09-18T06:35:29+00:00"
         },
         {
             "name": "gumlet/php-image-resize",
@@ -125,5 +125,5 @@
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

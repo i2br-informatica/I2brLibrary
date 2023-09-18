@@ -2,11 +2,12 @@
 
 namespace I2br\Api;
 
+use Eliaslazcano\Helpers\Http\ClienteHttp;
+use Eliaslazcano\Helpers\Http\RespostaHttp;
 use I2br\Helpers\CreciHelper;
 
 class ClienteLx4 extends ClienteHttp
 {
-  protected $baseUrl;
 
   /**
    * @param int $regional Numero do regional
@@ -14,7 +15,7 @@ class ClienteLx4 extends ClienteHttp
   public function __construct(int $regional)
   {
     $uf = CreciHelper::idParaUf($regional);
-    $this->baseUrl = "https://www.creci$uf.conselho.net.br/api";
+    parent::__construct("https://www.creci$uf.conselho.net.br/api");
   }
 
   /**

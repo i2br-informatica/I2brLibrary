@@ -2,9 +2,12 @@
 
 namespace I2br\Api;
 
+use Eliaslazcano\Helpers\Http\ClienteHttp;
+use Eliaslazcano\Helpers\Http\RespostaHttp;
+
 class ClienteApiV3 extends ClienteHttp
 {
-  protected $baseUrl = 'https://api.conselho.net.br/v3';
+  public $baseUrl = 'https://api.conselho.net.br/v3';
 
   /**
    * Consulta a lista de cobranças contidas em uma ficha cadastral através do CPF/CNPJ dela.
