@@ -62,6 +62,16 @@ class ClienteLx4 extends ClienteHttp
   }
 
   /**
+   * Obtem a lista de cobrancas emitidas para o CPF/CNPJ informado.
+   * @param string $cpfCnpj
+   * @return RespostaHttp
+   */
+  public function consultarCobrancas(string $cpfCnpj)
+  {
+    return $this->send('GET', "/consultar_cobrancas.php?cpf=$cpfCnpj");
+  }
+
+  /**
    * Atualiza uma cobranca vencida, gerando uma nova emissao com valor corrigido.
    * @param array $cobrancasIds
    * @return RespostaHttp
