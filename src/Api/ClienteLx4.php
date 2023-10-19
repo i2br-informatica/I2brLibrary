@@ -68,6 +68,6 @@ class ClienteLx4 extends ClienteHttp
    */
   public function atualizarCobrancas(array $cobrancasIds)
   {
-    return $this->send('POST', '/atualizar_cobranca.php', json_encode($cobrancasIds));
+    return $this->send('POST', '/atualizar_cobranca.php', json_encode(['cobrancas' => $cobrancasIds]));
   }
 }
