@@ -60,4 +60,14 @@ class ClienteLx4 extends ClienteHttp
     ];
     return $this->send('POST', '/pagamento_cartao_cielo.php', json_encode($json));
   }
+
+  /**
+   * Atualiza uma cobranca vencida, gerando uma nova emissao com valor corrigido.
+   * @param array $cobrancasIds
+   * @return RespostaHttp
+   */
+  public function atualizarCobrancas(array $cobrancasIds)
+  {
+    return $this->send('POST', '/atualizar_cobranca.php', json_encode($cobrancasIds));
+  }
 }
