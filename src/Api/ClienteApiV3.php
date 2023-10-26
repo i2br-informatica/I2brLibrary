@@ -11,6 +11,7 @@ class ClienteApiV3 extends ClienteHttp
 
   /**
    * Consulta a lista de cobranças contidas em uma ficha cadastral através do CPF/CNPJ dela.
+   * @deprecated Função movida para a classe ClienteLx4.
    * @param int $regional Número da região.
    * @param string $cpfCnpj CPF ou CNPJ do cadastro.
    * @param bool $corrigir As cobranças também vão informar seu valor corrigido. Torna o carregamento mais lento!
@@ -22,6 +23,20 @@ class ClienteApiV3 extends ClienteHttp
     $corrigir = $corrigir ? 1 : 0;
     $resolucao = $resolucao ? 1 : 0;
     return $this->send('GET', "/financeiro/consultar-cobrancas?regional=$regional&cpf=$cpfCnpj&corrigido=$corrigir&resolucao=$resolucao");
+  }
+
+  /**
+   * Envia a segunda-via do boleto por email.
+   * @param int $regional Número da região.
+   * @param string $email Endereço de email do destinatário.
+   * @param int $idFinanceiro ID da cobrança na tabela financeiro.
+   * @param string $baseUrl Url para o arquivo PHP que gera a tela do boleto. Ex: "https://www.crecirj.conselho.net.br/ver_boleto_aberto.php".
+   * @return RespostaHttp
+   */
+  public function enviarBoletoEmail(int $regional, string $email, int $idFinanceiro, string $baseUrl): RespostaHttp
+  {
+    $json = json_encode(["regional" => $regional, "idFinanceiro" => $idFinanceiro, "url" => $baseUrl, "email" => $email]);
+    return $this->send('POST', '/financeiro/enviar-boleto', $json);
   }
 
   /**
