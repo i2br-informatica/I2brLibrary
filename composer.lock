@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c74341bdaa078f5788ebcc36bd48b647",
+    "content-hash": "879ac2beea133b7021eed68dfb28c1cf",
     "packages": [
         {
             "name": "eliaslazcano/helpers",
