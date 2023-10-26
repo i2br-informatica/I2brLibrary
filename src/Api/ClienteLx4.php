@@ -80,4 +80,14 @@ class ClienteLx4 extends ClienteHttp
   {
     return $this->send('POST', '/atualizar_cobranca.php', json_encode(['cobrancas' => $cobrancasIds]));
   }
+
+  /**
+   * Obtem a linha digitavel de um boleto.
+   * @param int $idFinanceiro Identificador da cobranca.
+   * @return RespostaHttp
+   */
+  public function boletoLinhaDigitavel(int $idFinanceiro)
+  {
+    return $this->send('GET', "/boleto_linhadigitavel.php?id=$idFinanceiro");
+  }
 }
