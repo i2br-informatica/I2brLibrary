@@ -40,6 +40,19 @@ class ClienteApiV3 extends ClienteHttp
   }
 
   /**
+   * Download do boleto em formato PDF.
+   * @param int $regional Número da região.
+   * @param int $idFinanceiro ID da cobrança na tabela financeiro.
+   * @param string $baseUrl Url para o arquivo PHP que gera a tela do boleto. Ex: "https://www.crecirj.conselho.net.br/ver_boleto_aberto.php".
+   * @return RespostaHttp
+   */
+  public function downloadBoleto(int $regional, int $idFinanceiro, string $baseUrl): RespostaHttp
+  {
+    $json = json_encode(["regional" => $regional, "idFinanceiro" => $idFinanceiro, "url" => $baseUrl]);
+    return $this->send('POST', '/financeiro/download-boleto', $json);
+  }
+
+  /**
    * Estorna a transação do cartão de crédito. Se for bem sucedida o Cnet retornará a cobrança original com o estado de pagamento pendente.
    * @param int $regional Número do regional.
    * @param string $nsu NSU da transação.
