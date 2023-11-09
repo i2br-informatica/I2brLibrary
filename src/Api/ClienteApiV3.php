@@ -68,4 +68,17 @@ class ClienteApiV3 extends ClienteHttp
     ];
     return $this->send('POST', '/financeiro/cartao/estornar', json_encode($json));
   }
+
+  /**
+   * Download do boleto em formato PDF.
+   * @param int $regional Número da região.
+   * @param int $idFinanceiro ID da cobrança na tabela financeiro.
+   * @param string $baseUrl Url para o arquivo PHP que gera a tela do boleto. Ex: "https://www.crecirj.conselho.net.br/ver_boleto_aberto.php".
+   * @return RespostaHttp
+   */
+  public function downloadComprovante(int $regional, int $idFinanceiro): RespostaHttp
+  {
+    $json = json_encode(["regional" => $regional, "idFinanceiro" => $idFinanceiro]);
+    return $this->send('POST', '/financeiro/cartao/comprovante', $json);
+  }
 }
