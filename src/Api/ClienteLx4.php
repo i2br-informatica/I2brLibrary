@@ -90,4 +90,16 @@ class ClienteLx4 extends ClienteHttp
   {
     return $this->send('GET', "/boleto_linhadigitavel.php?id=$idFinanceiro");
   }
+
+  /**
+   * Gera um parcelamento em boletos para uma cobrança que estiver cadastrada a vista no sistema.
+   * @param int $idFinanceiro Identificador da cobranca na tabela 'financeiro'.
+   * @param int $parcelas Quantidade de parcelas.
+   * @return RespostaHttp
+   */
+  public function parcelarCobranca(int $idFinanceiro, int $parcelas)
+  {
+    $json = json_encode(['cobranca' => $idFinanceiro, 'parcelas' => $parcelas]);
+    return $this->send('POST', '/parcelar_cobranca.php', $json);
+  }
 }
